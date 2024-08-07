@@ -17,3 +17,7 @@ def forSendingJson(id:int):
             "data":
                 {"key":id}
             }
+
+@app.get("/json/{id}/comments")
+def comments(id:int):
+    return {"data":{"1","2"}}
